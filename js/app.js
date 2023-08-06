@@ -8,6 +8,10 @@ window.document.addEventListener("DOMContentLoaded", () =>{
         document.querySelector("nav").classList.remove("toggle");
     })
 
+    window.addEventListener("resize", () =>{
+        menu.classList.remove("fa-xmark")
+        document.querySelector("nav").classList.remove("toggle");
+    })
     menu.addEventListener("click", (e)=>{
         menu.classList.toggle("fa-xmark")
         document.querySelector("nav").classList.toggle("toggle");
