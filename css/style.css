@@ -23,18 +23,18 @@ body {
 
 /* HEADER */
 header{
+    width: 90%;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 2% 0;
+    margin: 20px auto;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 40%;
 }
 
 header nav a {
@@ -47,11 +47,8 @@ header nav a {
 /* MAIN */
 
 main{
-	max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #menu {
@@ -67,8 +64,6 @@ img {
 h1, .last-section h2 {
     font-family: "Pacifico";
     color: #072b5a;
-    width: 100%;
-    text-align: center;
 }
 
 footer h3 {
@@ -132,8 +127,7 @@ span {
     display: flex;
     justify-content: space-evenly;
     background-color: #efefef;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 5% 0;
 }
 
 div {
@@ -157,11 +151,13 @@ div {
 }
 
 .last-section{
+    width: 100%;
     display: flex;
+    padding: 10px;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 30px;
+    align-items: center;
+    margin: 1% 0;
 }
 
 .last-section .contact-form {
@@ -214,6 +210,13 @@ footer{
     background-color: #072b5a; 
     color: white;
 } 
+
+
+@media screen and (max-width: 1024px) {  
+    header nav {
+        width: 50%;
+    }
+}
 
 @media screen and (max-width: 768px) {    
 
@@ -286,3 +289,4 @@ footer{
         padding: 2px 5px;
     }
 }
+
