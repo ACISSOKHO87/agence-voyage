@@ -47,8 +47,11 @@ header nav a {
 /* MAIN */
 
 main{
-	max-width: 1500px;
-	margin: 0 auto;
+	max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #menu {
@@ -64,14 +67,17 @@ img {
 h1, .last-section h2 {
     font-family: "Pacifico";
     color: #072b5a;
+    width: 100%;
+    text-align: center;
 }
 
 footer h3 {
     font-family: "Pacifico";
 }
 
-.last-section p {
+p {
     text-align: center;
+    line-height: 1.6;
 }
 
 span {
@@ -121,15 +127,13 @@ span {
     margin-bottom: 0;
 }
 
-.first-section article p {
-    text-align: center;
-}
 
 .middle-section{
     display: flex;
     justify-content: space-evenly;
     background-color: #efefef;
-    padding: 5% 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 div {
@@ -153,13 +157,11 @@ div {
 }
 
 .last-section{
-    width: 100%;
     display: flex;
-    padding: 10px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 1% 0;
+    justify-content: center;
+    margin: 30px;
 }
 
 .last-section .contact-form {
